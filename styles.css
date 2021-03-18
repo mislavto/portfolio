@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #24272b;
+}
+
+nav {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #24272b;
+    font-family: 'Fira Code', monospace;
+    box-shadow: none!important;
+    display: flex;
+    justify-content: center;
+}
+
+ul li a{
+    width: 100%;
+    font-size: 20px;
+}
+
+
+nav.shift ul li a {
+    position:relative;
+    z-index: 1;
+}
+nav.shift ul li a:hover {
+    color: black;
+}
+nav.shift ul li a:after {
+    border-radius: 1px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #F1C40F;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    transition: .9s;
+}
+
+.home{
+    width: 100%;
+    height: auto;
+}
+
+.home-left{
+    padding: 8% 0% 0% 8%;
+    width: 79%;
+    display: inline-block;
+}
+
+.home-left h1 {
+    font-family: 'Fira Code', monospace;
+    font-size: 100px;
+    color: white;
+}
+
+.home-left span{
+    margin-left: 5%;
+    color: #F1C40F;
+}
+
+.avatar-img{
+    width: 635px;
+    margin-top: -360px;
+    margin-left: 568px;
+}
+
+.home-right{
+    width: 19%;
+    display: inline-block;
+    height: 1000px;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #1de9b6;
+    margin-top: 11px;
+    margin-left: -6px;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 100px solid #42474e;
+    margin-left: -100px;
+    margin-top: 100px;
+    transform: rotate(-25deg);
+}
+
+
