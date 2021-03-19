@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     background-color: #24272b;
+    font-family: 'Fira Code', monospace;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -15,24 +17,26 @@ nav {
     width: 100%;
     background-color: #24272b;
     font-family: 'Fira Code', monospace;
-    box-shadow: none!important;
+    box-shadow: none !important;
     display: flex;
     justify-content: center;
 }
 
-ul li a{
+ul li a {
     width: 100%;
     font-size: 20px;
 }
 
 
 nav.shift ul li a {
-    position:relative;
+    position: relative;
     z-index: 1;
 }
+
 nav.shift ul li a:hover {
     color: black;
 }
+
 nav.shift ul li a:after {
     border-radius: 1px;
     display: block;
@@ -51,6 +55,7 @@ nav.shift ul li a:after {
     opacity: 0;
     z-index: -1;
 }
+
 nav.shift ul li a:hover:after {
     opacity: 1;
     visibility: visible;
@@ -58,12 +63,12 @@ nav.shift ul li a:hover:after {
     transition: .9s;
 }
 
-.home{
+.home {
     width: 100%;
     height: auto;
 }
 
-.home-left{
+.home-left {
     padding: 8% 0% 0% 8%;
     width: 79%;
     display: inline-block;
@@ -75,33 +80,118 @@ nav.shift ul li a:hover:after {
     color: white;
 }
 
-.home-left span{
+.home-left span {
     margin-left: 5%;
     color: #F1C40F;
 }
 
-.avatar-img{
+.avatar-img {
     width: 635px;
-    margin-top: -360px;
-    margin-left: 568px;
+    margin-top: -419px;
+    margin-left: 564px;
 }
 
-.home-right{
-    width: 19%;
+.home-right {
+    width: 18%;
     display: inline-block;
     height: 1000px;
+    margin-bottom: 70px;
 }
 
-.circle{
+.home-right p {
+    margin-top: 70px;
+    margin-left: -120px;
+    color: #F1C40F;
+    position: absolute;
+}
+
+.home-right .dev-info {
+    color: white;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.home-right .more-info {
+    color: #a09a9a;
+    margin-top: 200px;
+}
+
+.home-right .github-info {
+    margin-top: 280px;
+}
+
+.home-right .email-info {
+    margin-top: 310px;
+}
+
+.socials {
+    font-size: 25px;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-twitter:hover {
+    transition: .5s;
+    color: #55ACEE;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+.fa-linkedin:hover {
+    transition: .5s;
+    color: #007bb5;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-instagram:hover {
+    transition: .5s;
+    color: #125688;
+}
+
+
+.circle {
     border-radius: 50%;
     height: 50px;
     width: 50px;
     background-color: #1de9b6;
     margin-top: 11px;
     margin-left: -6px;
+    animation: circle .8s infinite alternate;
+    -webkit-animation: circle .8s infinite alternate;
+
 }
 
-.triangle{
+@keyframes circle {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@-webkit-keyframes circle {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-55px);
+    }
+}
+
+
+.triangle {
     width: 0;
     height: 0;
     border-left: 80px solid transparent;
@@ -110,6 +200,184 @@ nav.shift ul li a:hover:after {
     margin-left: -100px;
     margin-top: 100px;
     transform: rotate(-25deg);
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+}
+
+@-webkit-keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+@-moz-keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+@keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+.scroll-btn {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: left;
+    margin-top: -325px;
+    margin-left: 325px !important;
+}
+
+.scroll-btn > * {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+    color: white;
+}
+
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.scroll-btn .mouse {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 55px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid #F1C40F;
+    border-radius: 23px;
+}
+
+.scroll-btn .mouse > * {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: white;
+    border-radius: 50%;
+    -webkit-animation: ani-mouse 2.5s linear infinite;
+    -moz-animation: ani-mouse 2.5s linear infinite;
+    animation: ani-mouse 2.5s linear infinite;
+}
+
+.about {
+    margin-top: 5%;
+}
+
+.about .about-p {
+    color: #F1C40F;
+    margin-left: 15%;
+}
+
+.about .about-big {
+    color: white;
+    font-size: 30px;
+    margin-left: 15%;
+    margin-top: 0.5%;
+}
+
+.about-small {
+    margin-top: 30px;
+    margin-left: 15%;
+    color: #a09a9a;
+}
+
+.experience {
+    margin-left: 22%;
+    color: white;
+    font-size: 30px;
+    display: contents;
+}
+
+.number {
+    font-size: 100px;
+    color: #F1C40F;
+    margin-left: 15%;
+}
+
+.right-about {
+    margin-left: 56%;
+    margin-top: -407px;
+    color: white;
+    font-size: 40px;
+}
+
+.right-about a {
+    text-decoration: underline;
+    color: #F1C40F;
+    font-size: 20px;
+}
+
+.right-about i {
+    font-size: 50px;
+    color: #F1C40F;
+    vertical-align: middle;
 }
 
 
