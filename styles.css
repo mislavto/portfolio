@@ -13,6 +13,7 @@ html {
 }
 
 nav {
+    user-select: none;
     margin: 0 auto;
     width: 100%;
     background-color: #24272b;
@@ -23,6 +24,7 @@ nav {
 }
 
 ul li a {
+    user-select: none;
     width: 100%;
     font-size: 20px;
 }
@@ -34,10 +36,12 @@ nav.shift ul li a {
 }
 
 nav.shift ul li a:hover {
+    user-select: none;
     color: black;
 }
 
 nav.shift ul li a:after {
+    user-select: none;
     border-radius: 1px;
     display: block;
     position: absolute;
@@ -57,6 +61,7 @@ nav.shift ul li a:after {
 }
 
 nav.shift ul li a:hover:after {
+    user-select: none;
     opacity: 1;
     visibility: visible;
     height: 100%;
@@ -64,34 +69,40 @@ nav.shift ul li a:hover:after {
 }
 
 .home {
+    user-select: none;
     width: 100%;
     height: auto;
 }
 
 .home-left {
+    user-select: none;
     padding: 8% 0% 0% 8%;
     width: 79%;
     display: inline-block;
 }
 
 .home-left h1 {
+    user-select: none;
     font-family: 'Fira Code', monospace;
     font-size: 100px;
     color: white;
 }
 
 .home-left span {
+    user-select: none;
     margin-left: 5%;
     color: #F1C40F;
 }
 
 .avatar-img {
+    user-select: none;
     width: 635px;
     margin-top: -419px;
     margin-left: 564px;
 }
 
 .home-right {
+    user-select: none;
     width: 18%;
     display: inline-block;
     height: 1000px;
@@ -99,6 +110,7 @@ nav.shift ul li a:hover:after {
 }
 
 .home-right p {
+    user-select: none;
     margin-top: 70px;
     margin-left: -120px;
     color: #F1C40F;
@@ -106,29 +118,48 @@ nav.shift ul li a:hover:after {
 }
 
 .home-right .dev-info {
+    user-select: none;
     color: white;
     font-size: 30px;
     margin-top: 100px;
 }
 
 .home-right .more-info {
+    user-select: none;
     color: #a09a9a;
     margin-top: 200px;
 }
 
 .home-right .github-info {
+    user-select: none;
+    color: white;
     margin-top: 280px;
 }
 
+.home-right .github-info a{
+    user-select: none;
+    color: #F1C40F;
+}
+
 .home-right .email-info {
+    color: white;
     margin-top: 310px;
 }
 
+.home-right .email-info a{
+    user-select: text;
+    cursor: text;
+    margin-top: 310px;
+    color: #F1C40F;
+}
+
 .socials {
+    user-select: none;
     font-size: 25px;
 }
 
 .fa-twitter {
+    user-select: none;
     color: white;
 }
 
@@ -138,10 +169,12 @@ nav.shift ul li a:hover:after {
 }
 
 .fa-linkedin {
+    user-select: none;
     color: white;
 }
 
 .fa-linkedin {
+    user-select: none;
     color: white;
 }
 
@@ -151,6 +184,7 @@ nav.shift ul li a:hover:after {
 }
 
 .fa-instagram {
+    user-select: none;
     color: white;
 }
 
@@ -161,6 +195,7 @@ nav.shift ul li a:hover:after {
 
 
 .circle {
+    user-select: none;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -192,6 +227,7 @@ nav.shift ul li a:hover:after {
 
 
 .triangle {
+    user-select: none;
     width: 0;
     height: 0;
     border-left: 80px solid transparent;
@@ -265,6 +301,7 @@ nav.shift ul li a:hover:after {
 }
 
 .scroll-btn {
+    user-select: none;
     display: block;
     position: absolute;
     left: 0;
@@ -275,6 +312,7 @@ nav.shift ul li a:hover:after {
 }
 
 .scroll-btn > * {
+    user-select: none;
     display: inline-block;
     line-height: 18px;
     font-size: 13px;
@@ -288,6 +326,7 @@ nav.shift ul li a:hover:after {
 .scroll-btn > *:focus,
 .scroll-btn > *.active {
     color: white;
+    user-select: none;
 }
 
 .scroll-btn > *:hover,
@@ -296,9 +335,11 @@ nav.shift ul li a:hover:after {
 .scroll-btn > *.active {
     opacity: 0.8;
     filter: alpha(opacity=80);
+    user-select: none;
 }
 
 .scroll-btn .mouse {
+    user-select: none;
     position: relative;
     display: block;
     width: 35px;
@@ -312,6 +353,7 @@ nav.shift ul li a:hover:after {
 }
 
 .scroll-btn .mouse > * {
+    user-select: none;
     position: absolute;
     display: block;
     top: 29%;
@@ -327,15 +369,18 @@ nav.shift ul li a:hover:after {
 }
 
 .about {
+    user-select: none;
     margin-top: 5%;
 }
 
 .about .about-p {
+    user-select: none;
     color: #F1C40F;
     margin-left: 15%;
 }
 
 .about .about-big {
+    user-select: none;
     color: white;
     font-size: 30px;
     margin-left: 15%;
@@ -343,12 +388,14 @@ nav.shift ul li a:hover:after {
 }
 
 .about-small {
+    user-select: none;
     margin-top: 30px;
     margin-left: 15%;
     color: #a09a9a;
 }
 
 .experience {
+    user-select: none;
     margin-left: 22%;
     color: white;
     font-size: 30px;
@@ -356,12 +403,14 @@ nav.shift ul li a:hover:after {
 }
 
 .number {
+    user-select: none;
     font-size: 100px;
     color: #F1C40F;
     margin-left: 15%;
 }
 
 .right-about {
+    user-select: none;
     margin-left: 56%;
     margin-top: -407px;
     color: white;
@@ -369,15 +418,57 @@ nav.shift ul li a:hover:after {
 }
 
 .right-about a {
+    user-select: none;
     text-decoration: underline;
     color: #F1C40F;
     font-size: 20px;
 }
 
 .right-about i {
+    user-select: none;
     font-size: 50px;
     color: #F1C40F;
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 1600px) {
+    .avatar-img {
+        user-select: none;
+        width: 635px;
+        margin-top: -419px;
+        margin-left: 550px;
+    }
+
+    .home-left {
+        user-select: none;
+        padding: 8% 0% 0% 2.5%;
+        width: 79%;
+        display: inline-block;
+    }
+
+    .scroll-btn {
+        margin-top: -500px;
+    }
+
+    .about .about-p {
+        margin-left: 11%;
+    }
+
+    .about .about-big {
+        margin-left: 11%;
+    }
+
+    .about-small {
+        margin-left: 11%;
+    }
+
+    .experience {
+        margin-left: 18%;
+    }
+
+    .number {
+        margin-left: 11%;
+    }
 }
 
 
