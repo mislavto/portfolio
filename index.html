@@ -5,10 +5,12 @@
     <link rel="icon" href="assets/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="helpers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <title>Tomislav Z.</title>
 </head>
 <body>
@@ -18,8 +20,8 @@
             <ul id="nav-mobile" class="center-align hide-on-med-and-down">
                 <li><a href="">home</a></li>
                 <li><a href="#about">about</a></li>
-                <li><a href="">services</a></li>
-                <li><a href="">projects</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#projects">projects</a></li>
                 <li><a href="">contact</a></li>
             </ul>
         </nav>
@@ -67,6 +69,115 @@
             </div>
         </div>
     </section>
+    <section class="container" id="services">
+        <div class="service">
+            <h6 class="p-5"><span>Services</span> ⎯⎯⎯⎯⎯⎯⎯⎯</h6>
+            <h1 class="services-h mt-3 mb-5">What I do?</h1>
+        </div>
+        <div class="row">
+            <div class="frontend col s12 m12 l4 xl4 center mt-5">
+                <img src="assets/monitor.svg" alt="">
+                <h5 class="mt-5 mb-5">Frontend Dev</h5>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis doloremque
+                    doloribus eum hic in, itaque minima nulla officia perferendis.</p>
+                <p class="line">⎯⎯⎯⎯ ⎯⎯⎯⎯</p>
+            </div>
+            <div class="web-development col s12 m12 l4 xl4 center">
+                <img src="assets/laptop.svg" alt="">
+                <h5 class="mt-5 mb-5">Web Development</h5>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis doloremque
+                    doloribus eum hic in, itaque minima nulla officia perferendis.</p>
+                <a href=""><p class="line mb-5">⎯⎯⎯⎯Contact Me⎯⎯⎯⎯</p></a>
+            </div>
+            <div class="backend col s12 m12 l4 xl4 center mt-5">
+                <img src="assets/server.svg" alt="">
+                <h5 class="mt-5 mb-5">Backend Dev</h5>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis doloremque
+                    doloribus eum hic in, itaque minima nulla officia perferendis.</p>
+                <p class="line">⎯⎯⎯⎯ ⎯⎯⎯⎯</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="frontend col s12 m12 l4 xl4 center mt-5"></div>
+            <div class="web-development2 col s12 m12 l4 xl4 center">
+                <p class="lines mt-5">⎯ <span>⎯⎯⎯</span> ⎯ ⎯</p>
+            </div>
+            <div class="backend col s12 m12 l4 xl4 center mt-5"></div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="skills mt-5">
+            <h6 class="p-5"><span>Skills</span> ⎯⎯⎯⎯⎯⎯⎯⎯</h6>
+            <h2 class="mt-1 mb-5">How good am I at</h2>
+            <div class="row">
+                <div class="col s12 m6 l3 center">
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="circle1">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Angular</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 center">
+                    <div class="wrapper">
+                        <div class="card spring">
+                            <div class="circle1">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Spring Boot</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 center">
+                    <div class="wrapper">
+                        <div class="card mysql">
+                            <div class="circle1">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">MySQL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 center">
+                    <div class="wrapper">
+                        <div class="card linux">
+                            <div class="circle1">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Linux</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+<script>
+    let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.50,
+        fill: {gradient: ['#F1C40F', '#c19d16']}
+    }
+    $(".circle1 .bar").circleProgress(options).on('circle-animation-progress',
+        function (event, progress, stepValue) {
+            $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
+    $(".spring .bar").circleProgress({
+        value: 0.70
+    });
+    $(".mysql .bar").circleProgress({
+        value: 0.80
+    });
+    $(".linux .bar").circleProgress({
+        value: 0.25
+    });
+</script>
 </body>
 </html>
