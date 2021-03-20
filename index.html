@@ -2,19 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="icon" href="assets/logo2.png" type="image/x-icon">
+    <link rel="icon" href="assets/word_T.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="helpers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Tomislav Z.</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <script src="main.js"></script>
+    <title>Tomislav Živadinović</title>
 </head>
 <body>
+
 <div class="main-content">
+
     <div class="header">
         <nav class="shift">
             <ul id="nav-mobile" class="center-align hide-on-med-and-down">
@@ -22,7 +27,7 @@
                 <li><a href="#about">about</a></li>
                 <li><a href="#services">services</a></li>
                 <li><a href="#projects">projects</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </div>
@@ -54,9 +59,9 @@
     </div>
     <section id="about">
         <div class="about">
-            <p class="about-p"><u>About me</u> ⎯⎯⎯⎯⎯⎯⎯⎯</p>
-            <p class="about-big">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Explicabo nihil quis
-                sint!</p>
+            <p class="about-p mt-5"><u>About me</u> ⎯⎯⎯⎯⎯⎯⎯⎯</p>
+            <p class="about-big mt-5">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Explicabo nihil
+                quis sint!</p>
             <p class="about-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Ab culpa fugit harum
                 inventore magnam nam nisi qui quia soluta vel.
                 <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Ab culpa fugit harum inventore magnam
@@ -64,8 +69,8 @@
             <span class="number">2</span>
             <p class="experience">Years of experience</p>
             <div class="right-about">
-                <p>Any type of question || discussion.</p>
-                <a href="">zivadinovictomislav@gmail.com</a><i class="material-icons">arrow_forward</i>
+                <p>Any type of question <br>|| discussion.</p>
+                <a href="#contact">zivadinovictomislav@gmail.com</a><i class="material-icons">arrow_forward</i>
             </div>
         </div>
     </section>
@@ -87,7 +92,7 @@
                 <h5 class="mt-5 mb-5">Web Development</h5>
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis doloremque
                     doloribus eum hic in, itaque minima nulla officia perferendis.</p>
-                <a href=""><p class="line mb-5">⎯⎯⎯⎯Contact Me⎯⎯⎯⎯</p></a>
+                <a href="#contact"><p class="line mb-5">⎯⎯⎯⎯Contact Me⎯⎯⎯⎯</p></a>
             </div>
             <div class="backend col s12 m12 l4 xl4 center mt-5">
                 <img src="assets/server.svg" alt="">
@@ -157,9 +162,90 @@
             </div>
             <h6 class="p-5"><span>Portfolio</span> ⎯⎯⎯⎯⎯⎯⎯⎯</h6>
             <h2 class="mt-1 mb-5">My projects so far</h2>
+            <div class="gallery js-flickity"
+                 data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell">
+                    <img src="https://source.unsplash.com/random/459x500" alt="">
+                    <div class="project-info"><p>Lorem ipsum dolor sit amet.</p></div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="https://source.unsplash.com/random/459x500" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="https://source.unsplash.com/random/459x500" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="https://source.unsplash.com/random/459x500" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="https://source.unsplash.com/random/459x500" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left-column col s6 center">
+                    <h6 class="mt-5">Get In Touch</h6>
+                    <h3 class="mt-5">Email or Text me</h3>
+                    <div class="email-section mt-5">
+                        <img src="assets/email.svg" alt="" class="mr-4">
+                        <h5>zivadinovictomislav@gmail.com</h5>
+                    </div>
+                    <div class="chat-section mt-5">
+                        <img src="assets/chat.svg" alt="" class="mr-4">
+                        <a href="https://t.me/tzivadinovic" target="_blank"><h5>t.me/tzivadinovic</h5></a>
+                    </div>
+                    <div class="github-section mt-5">
+                        <img src="assets/github-sign.svg" alt="" class="mr-4">
+                        <a href="https://www.github.com/tzivadinovic" target="_blank"><h5>github.com/tzivadinovic</h5></a>
+                    </div>
+                    <div class="linkedin-section mt-5 mb-5">
+                        <img src="assets/linkedin.svg" alt="" class="mr-4">
+                        <a href="https://www.linkedin.com/in/tomislavzivadinovic/" target="_blank"><h5>linkedin.com/in/tomislavzivadinovic</h5></a>
+                    </div>
+                </div>
+                <div class="right-column col s6 center">
+                    <h6 class="mt-5">Contact Form</h6>
+                    <h3 class="mt-5">Send me a message</h3>
+                    <div class="row">
+                        <form class="col s12" action="https://formspree.io/f/mwkaeplk" method="POST" id="my-form">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="first_name" type="text" class="validate" name="sender_name">
+                                    <label for="first_name">Your name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate" name="_replyto">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
+                                            <label for="textarea1">Message</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn waves-effect waves-light send-btn" type="submit" name="action">SEND
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </form>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </div>
+<button class="btn btn-primary scroll-top" data-scroll="up" type="button">
+    <i class="fa fa-chevron-up"></i>
+</button>
 <script>
     let options = {
         startAngle: -1.55,
