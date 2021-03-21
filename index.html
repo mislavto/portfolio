@@ -228,13 +228,13 @@
                         <form class="col s12" action="http://localhost:3000/api/emails" method="POST" id="my-form">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="first_name" type="text" class="validate" name="sender_name">
+                                    <input id="first_name" type="text" class="validate" name="sender_name" disabled placeholder="Coming soon">
                                     <label for="first_name">Your name</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="email" type="email" class="validate" name="sender_email">
+                                    <input id="email" type="email" class="validate" name="sender_email" disabled placeholder="Coming soon">
                                     <label for="email">Email</label>
                                 </div>
                             </div>
@@ -242,12 +242,11 @@
                                 <form class="col s12">
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <textarea id="textarea1" class="materialize-textarea"
-                                                      name="message"></textarea>
+                                            <textarea id="textarea1" class="materialize-textarea" name="message" disabled placeholder="Coming soon"></textarea>
                                             <label for="textarea1">Message</label>
                                         </div>
                                     </div>
-                                    <button class="btn waves-effect waves-light send-btn" type="submit" name="action">
+                                    <button class="btn waves-effect waves-light send-btn disabled" type="submit" name="action">
                                         SEND
                                         <i class="material-icons right">send</i>
                                     </button>

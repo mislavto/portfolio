@@ -14,6 +14,10 @@ html {
     scroll-behavior: smooth;
 }
 
+input[type=text][disabled] {
+    color: white !important;
+}
+
 .top-nav {
     width: 100%;
     height: 100vh;
@@ -890,7 +894,7 @@ nav.shift ul li a:hover {
 }
 
 input {
-    color: white;
+    color: white !important;
 }
 
 .input-field .materialize-textarea {
@@ -914,6 +918,21 @@ input {
 
 
 .input-field .materialize-textarea:focus {
+    border-bottom: 1px solid #F1C40F !important;
+    box-shadow: 0 1px 0 0 #F1C40F !important;
+}
+
+.input-field input[type=text]:disabled{
+    border-bottom: 1px solid #F1C40F !important;
+    box-shadow: 0 1px 0 0 #F1C40F !important;
+}
+
+.input-field input[type=email]:disabled{
+    border-bottom: 1px solid #F1C40F !important;
+    box-shadow: 0 1px 0 0 #F1C40F !important;
+}
+
+.input-field .materialize-textarea:disabled {
     border-bottom: 1px solid #F1C40F !important;
     box-shadow: 0 1px 0 0 #F1C40F !important;
 }
