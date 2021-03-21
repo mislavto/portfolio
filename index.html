@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="helpers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,13 +21,18 @@
 <div class="main-content">
 
     <div class="header">
-        <nav class="shift">
+        <div class="menu-toggler">
+            <div class="bar1 half start"></div>
+            <div class="bar1"></div>
+            <div class="bar1 half end"></div>
+        </div>
+        <nav class="shift top-nav">
             <ul id="nav-mobile" class="center-align hide-on-med-and-down">
-                <li><a href="">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="" class="nav-link">home</a></li>
+                <li><a href="#about" class="nav-link">about</a></li>
+                <li><a href="#services" class="nav-link">services</a></li>
+                <li><a href="#projects" class="nav-link">projects</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
             </ul>
         </nav>
     </div>
@@ -120,7 +125,9 @@
                         <div class="card">
                             <div class="circle1">
                                 <div class="bar"></div>
-                                <div class="box"><span></span></div>
+                                <a href="https://angular.io/" target="_blank">
+                                    <div class="box"><span></span></div>
+                                </a>
                             </div>
                             <div class="text">Angular</div>
                         </div>
@@ -131,7 +138,9 @@
                         <div class="card spring">
                             <div class="circle1">
                                 <div class="bar"></div>
-                                <div class="box"><span></span></div>
+                                <a href="https://spring.io/" target="_blank">
+                                    <div class="box"><span></span></div>
+                                </a>
                             </div>
                             <div class="text">Spring Boot</div>
                         </div>
@@ -142,7 +151,9 @@
                         <div class="card mysql">
                             <div class="circle1">
                                 <div class="bar"></div>
-                                <div class="box"><span></span></div>
+                                <a href="https://www.mysql.com/" target="_blank">
+                                    <div class="box"><span></span></div>
+                                </a>
                             </div>
                             <div class="text">MySQL</div>
                         </div>
@@ -153,7 +164,9 @@
                         <div class="card linux">
                             <div class="circle1">
                                 <div class="bar"></div>
-                                <div class="box"><span></span></div>
+                                <a href="https://www.linux.org/" target="_blank">
+                                    <div class="box"><span></span></div>
+                                </a>
                             </div>
                             <div class="text">Linux</div>
                         </div>
@@ -199,18 +212,20 @@
                     </div>
                     <div class="github-section mt-5">
                         <img src="assets/github-sign.svg" alt="" class="mr-4">
-                        <a href="https://www.github.com/tzivadinovic" target="_blank"><h5>github.com/tzivadinovic</h5></a>
+                        <a href="https://www.github.com/tzivadinovic" target="_blank"><h5>github.com/tzivadinovic</h5>
+                        </a>
                     </div>
                     <div class="linkedin-section mt-5 mb-5">
                         <img src="assets/linkedin.svg" alt="" class="mr-4">
-                        <a href="https://www.linkedin.com/in/tomislavzivadinovic/" target="_blank"><h5>linkedin.com/in/tomislavzivadinovic</h5></a>
+                        <a href="https://www.linkedin.com/in/tomislavzivadinovic/" target="_blank"><h5>
+                            linkedin.com/in/tomislavzivadinovic</h5></a>
                     </div>
                 </div>
                 <div class="right-column col s6 center">
                     <h6 class="mt-5">Contact Form</h6>
                     <h3 class="mt-5">Send me a message</h3>
                     <div class="row">
-                        <form class="col s12" action="https://formspree.io/f/mwkaeplk" method="POST" id="my-form">
+                        <form class="col s12" action="http://localhost:3000/api/emails" method="POST" id="my-form">
                             <div class="row">
                                 <div class="input-field col s12">
                                     <input id="first_name" type="text" class="validate" name="sender_name">
@@ -219,7 +234,7 @@
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="email" type="email" class="validate" name="_replyto">
+                                    <input id="email" type="email" class="validate" name="sender_email">
                                     <label for="email">Email</label>
                                 </div>
                             </div>
@@ -227,11 +242,13 @@
                                 <form class="col s12">
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
+                                            <textarea id="textarea1" class="materialize-textarea"
+                                                      name="message"></textarea>
                                             <label for="textarea1">Message</label>
                                         </div>
                                     </div>
-                                    <button class="btn waves-effect waves-light send-btn" type="submit" name="action">SEND
+                                    <button class="btn waves-effect waves-light send-btn" type="submit" name="action">
+                                        SEND
                                         <i class="material-icons right">send</i>
                                     </button>
                                 </form>
@@ -243,9 +260,7 @@
         </div>
     </section>
 </div>
-<button class="btn btn-primary scroll-top" data-scroll="up" type="button">
-    <i class="fa fa-chevron-up"></i>
-</button>
+<button class="btn scroll-top" data-scroll="up" type="button"><i class="fa fa-chevron-up"></i></button>
 <script>
     let options = {
         startAngle: -1.55,
