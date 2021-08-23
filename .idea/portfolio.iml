@@ -14,5 +14,9 @@
     <orderEntry type="library" name="font-awesome" level="application" />
     <orderEntry type="library" name="jquery-circle-progress" level="application" />
     <orderEntry type="library" name="flickity" level="application" />
+    <orderEntry type="library" name="materialize" level="application" />
+    <orderEntry type="library" name="flickity" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="jquery-circle-progress" level="application" />
   </component>
 </module>
