@@ -1060,7 +1060,7 @@ input {
     .nav-link {
         font-size: 3.5rem;
         flex-direction: column;
-        color: #F1C40F;
+        color: white;
     }
 
     .hide-on-med-and-down {
@@ -1086,6 +1086,6 @@ input {
     }
 
     ul{
-        margin-top: 5%;
+        margin-top: 5% !important;
     }
 }
