@@ -34,7 +34,7 @@ input[type=text][disabled] {
     z-index: 50;
 }
 
-ul{
+ul {
     display: grid;
 }
 
@@ -183,9 +183,9 @@ nav.shift ul li a:hover {
 .avatar-img {
     user-select: none;
     position: absolute;
-    top:0;
-    width: 100%;
-    left: -3%;
+    top: 5%;
+    height: 100%;
+    left: 28%;
     z-index: 0;
 }
 
@@ -753,7 +753,7 @@ nav.shift ul li a:hover {
 .project-info {
     text-align: center;
     width: 100%;
-    margin-top:-3em;
+    margin-top: -3em;
 }
 
 .project-info p {
@@ -863,12 +863,12 @@ input {
     box-shadow: 0 1px 0 0 #F1C40F !important;
 }
 
-.input-field input[type=text]:disabled{
+.input-field input[type=text]:disabled {
     border-bottom: 1px solid #F1C40F !important;
     box-shadow: 0 1px 0 0 #F1C40F !important;
 }
 
-.input-field input[type=email]:disabled{
+.input-field input[type=email]:disabled {
     border-bottom: 1px solid #F1C40F !important;
     box-shadow: 0 1px 0 0 #F1C40F !important;
 }
@@ -922,6 +922,7 @@ input {
     .home {
         height: auto;
     }
+
     .avatar-img {
         display: none;
     }
@@ -1060,7 +1061,8 @@ input {
         flex-direction: column;
         color: #F1C40F;
     }
-    .hide-on-med-and-down{
+
+    .hide-on-med-and-down {
         display: flex !important;
         flex-direction: column;
     }
@@ -1070,6 +1072,7 @@ input {
         padding-right: 2em;
         overflow-x: hidden;
     }
+
     #contact h5 {
         font-size: .8em;
     }
