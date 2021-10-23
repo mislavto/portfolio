@@ -1079,7 +1079,7 @@ input {
     }
 
     ul{
-        margin-top: 15% !important;
+        margin-top: 30% !important;
     }
 }
 
@@ -1088,6 +1088,4 @@ input {
     .avatar-img {
         display: none;
     }
-
-
 }
