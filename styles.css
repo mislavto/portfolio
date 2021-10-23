@@ -234,7 +234,7 @@ nav.shift ul li a:hover {
 
 .home-right .email-info a {
     user-select: text;
-    cursor: text;
+    cursor: pointer;
     color: #F1C40F;
 }
 
