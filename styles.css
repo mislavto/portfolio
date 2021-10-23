@@ -36,6 +36,7 @@ input[type=text][disabled] {
 
 ul {
     display: grid;
+    margin-top: 4% !important;
 }
 
 .nav-list {
@@ -1082,5 +1083,9 @@ input {
 @media only screen and (max-width: 1400px) {
     .avatar-img {
         display: none;
+    }
+
+    ul{
+        margin-top: 5%;
     }
 }
