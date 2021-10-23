@@ -1077,6 +1077,10 @@ input {
     #contact h5 {
         font-size: .8em;
     }
+
+    ul{
+        margin-top: 15% !important;
+    }
 }
 
 
@@ -1085,7 +1089,5 @@ input {
         display: none;
     }
 
-    ul{
-        margin-top: 15% !important;
-    }
+
 }
