@@ -737,14 +737,15 @@ nav.shift ul li a:hover {
 }
 
 .gallery-cell {
-    width: 100%;
-    height: 742px;
+    width: 1000px;
+    height: 500px;
     margin-right: 10px;
     counter-increment: gallery-cell;
 }
 
 .gallery-cell img{
-    width: 100% !important;
+    width: 100%;
+    height: 500px;
 }
 
 .flickity-prev-next-button {
